@@ -23,6 +23,10 @@
 		"install-requirements": "pip install --no-cache-dir --user -r requirements.txt"
 	},
 
+	"mounts": [
+		"source=${localEnv:HOME}/.ssh,target=/home/vscode/.ssh,type=bind,consistency=cached"
+	],
+
 	// Configure tool-specific properties.
 	"customizations": {
 		"vscode": {
